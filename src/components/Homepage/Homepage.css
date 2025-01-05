@@ -504,6 +504,23 @@ body, html {
   }
 
   .map-container {
+    width: 100%;  /* Make the map container full-width on small screens */
     height: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .location-section {
+    padding: 0 10px; /* Reduce padding further for very small screens */
+    margin-top: 20px; /* Decrease top margin */
+  }
+
+  .location-section h3 {
+    font-size: 20px;  /* Smaller heading size for mobile */
+    margin-bottom: 15px;
+  }
+
+  .map-container {
+    height: 250px;  /* Adjust map height further for small screens */
   }
 }
