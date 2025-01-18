@@ -4,6 +4,7 @@ import { Instagram, Phone, MapPin, Mail } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import './Footer.css';
 import logo from '../../assets/lg1.png';
+import Logo2 from '../../assets/lg2.png';
 
 export const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -123,10 +124,24 @@ export const Footer = () => {
       </div>
 
       <div className="footer-bottom">
-        <div className="footer-bottom-content">
-          <p>&copy; {currentYear} CardosoSarl Entreprise. Made by Tiago Guimaraes. Tous droits réservés.</p>
-        </div>
+      <div className="footer-bottom-content">
+        <p>&copy; {currentYear} Réalisé par TG Web Design. Cardoso Sarl. Tous droits réservés.</p>
+         <p>
+          <a 
+            href="https://tgwebdesign.netlify.app/" 
+            target="_blank" 
+            rel="noopener noreferrer"
+          >
+            <img 
+              src={Logo2} 
+              alt="TG Web Design Logo" 
+              className="footer-logo2" 
+              style={{ width: "60px", height: "auto" }} // Optional inline style
+            />
+          </a>
+        </p>
       </div>
+    </div>
     </footer>
   );
 };
